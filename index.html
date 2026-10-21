@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO -->
+  <title>Malik Sohaib Iqbal — Frontend Engineer & SQA</title>
+  <meta name="title" content="Malik Sohaib Iqbal — Frontend Engineer & SQA" />
+  <meta name="description" content="Personal directory and official links of Malik Sohaib Iqbal — Frontend Web Developer & Software Quality Assurance Engineer in Lahore. Building Sohnics SEOCrawler, QRSlate, TasbihHub, and Sohnics Tech." />
+  <meta name="keywords" content="Malik Sohaib Iqbal, Sohaib Iqbal, Frontend Engineer, SQA Engineer, Sohnics SEOCrawler, QRSlate, TasbihHub, Sohnics Tech, React Developer Pakistan" />
+  <meta name="author" content="Malik Sohaib Iqbal" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#090a0c" />
+  <link rel="canonical" href="https://sohaib-iqbal.netlify.app/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://sohaib-iqbal.netlify.app/" />
+  <meta property="og:title" content="Malik Sohaib Iqbal — Frontend Engineer & SQA" />
+  <meta property="og:description" content="Personal directory, live premium ventures (Sohnics SEOCrawler, QRSlate, TasbihHub), open-source code, and writing by Malik Sohaib Iqbal." />
+  <meta property="og:image" content="https://sohaib-iqbal.netlify.app/avatar-3d.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Malik Sohaib Iqbal — Frontend Engineer & SQA" />
+  <meta name="twitter:description" content="Personal directory, live ventures, open-source code, and writing by Malik Sohaib Iqbal." />
+  <meta name="twitter:image" content="https://sohaib-iqbal.netlify.app/avatar-3d.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="avatar-3d.png" />
+
+  <!-- Fonts: Inter, Instrument Serif, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://maliksohaibiqbal.me/#person",
+      "name": "Malik Sohaib Iqbal",
+      "alternateName": "Sohaib Iqbal",
+      "jobTitle": "Frontend Developer & SQA Engineer",
+      "url": "https://maliksohaibiqbal.me",
+      "image": "https://sohaib-iqbal.netlify.app/avatar-3d.png",
+      "email": "mailto:sohaib.bronze92@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lahore",
+        "addressCountry": "PK"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Virtual University of Pakistan"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Sohnics",
+        "url": "https://sohnics.tech"
+      },
+      "sameAs": [
+        "https://maliksohaibiqbal.me",
+        "https://sohaib-iqbal.netlify.app",
+        "https://github.com/MalikSohaibIqbal",
+        "https://dev.to/malik_sohaib_iqbal",
+        "https://www.linkedin.com/in/sohaib-iqbal-32b982192",
+        "https://www.instagram.com/sohaib.iqbal.9895",
+        "https://www.facebook.com/sohaib.iqbal.9895",
+        "https://sohnics.tech",
+        "https://seocrawler.sohnics.tech",
+        "https://qrslate.sohnics.tech",
+        "https://tasbihhub.online"
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090a0c;
+      --surface: #111317;
+      --surface-hover: #171a20;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-strong: rgba(255, 255, 255, 0.16);
+      --text-primary: #f1f5f9;
+      --text-secondary: #8b95a5;
+      --text-tertiary: #525b69;
+      --avatar-sky: #7dd3fc;
+      --status-green: #22c55e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 68px 20px 96px;
+      position: relative;
+    }
+
+    /* Subtle analog film grain */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Soft sky-blue ambient glow */
+    .ambient-light {
+      position: fixed;
+      top: -160px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 620px;
+      height: 340px;
+      background: radial-gradient(circle, rgba(125, 211, 252, 0.085) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 510px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: revealAnim 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes revealAnim {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Top Status Bar */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 36px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-secondary);
+      letter-spacing: -0.01em;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: var(--status-green);
+      box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+      animation: pulse 2.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.5); }
+      70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+
+    /* Profile Identity Header */
+    .identity {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 22px;
+    }
+
+    .avatar-ring {
+      position: relative;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      padding: 2.5px;
+      background: linear-gradient(135deg, rgba(125, 211, 252, 0.65), rgba(255, 255, 255, 0.12));
+      box-shadow: 
+        0 10px 30px -5px rgba(0, 0, 0, 0.7),
+        0 0 24px rgba(125, 211, 252, 0.18);
+      flex-shrink: 0;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+    }
+
+    .avatar-ring:hover {
+      transform: scale(1.06) rotate(-2deg);
+      box-shadow: 
+        0 14px 35px -5px rgba(0, 0, 0, 0.8),
+        0 0 34px rgba(125, 211, 252, 0.35);
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #89CFF0;
+      border: 2px solid var(--bg);
+      position: relative;
+    }
+
+    .avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transform: scale(1.06);
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .avatar-ring:hover .avatar {
+      transform: scale(1.12);
+    }
+
+    .identity-text h1 {
+      font-size: 23px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+
+    .identity-text .serif-role {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 19.5px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .bio {
+      color: var(--text-secondary);
+      font-size: 14px;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .bio strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Primary Bento Grid */
+    .bento-primary {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .flagship-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      background: linear-gradient(180deg, #161920 0%, #101216 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      overflow: hidden;
+    }
+
+    .flagship-card:hover {
+      border-color: rgba(125, 211, 252, 0.45);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.75), 0 0 20px rgba(125, 211, 252, 0.08);
+    }
+
+    .flagship-left {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .badge-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--avatar-sky);
+      margin-bottom: 2px;
+    }
+
+    .flagship-title {
+      font-size: 15.5px;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      color: #ffffff;
+    }
+
+    .flagship-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .flagship-arrow {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--border-strong);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.03);
+      transition: all 0.25s ease;
+    }
+
+    .flagship-card:hover .flagship-arrow {
+      background: var(--text-primary);
+      color: var(--bg);
+      transform: rotate(45deg);
+    }
+
+    /* Utility Row */
+    .utility-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .util-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 15px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text-primary);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .util-btn:hover {
+      background: var(--surface-hover);
+      border-color: var(--border-strong);
+    }
+
+    .util-left {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .util-left svg {
+      width: 15px;
+      height: 15px;
+      color: var(--text-secondary);
+    }
+
+    .kbd {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-tertiary);
+      border: 1px solid var(--border);
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    /* Editorial Link Sections */
+    .section-group {
+      margin-bottom: 32px;
+    }
+
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-tertiary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .editorial-list {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid var(--border);
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 4px;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.22s ease;
+    }
+
+    .editorial-list:hover .list-item {
+      opacity: 0.45;
+    }
+
+    .editorial-list .list-item:hover {
+      opacity: 1;
+      padding-left: 10px;
+      padding-right: 8px;
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    .item-main {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .item-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .item-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .item-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .item-domain {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--text-tertiary);
+      transition: color 0.2s ease;
+    }
+
+    .list-item:hover .item-domain {
+      color: var(--text-secondary);
+    }
+
+    .item-arrow {
+      width: 14px;
+      height: 14px;
+      color: var(--avatar-sky);
+      opacity: 0;
+      transform: translate(-4px, 4px);
+      transition: all 0.22s ease;
+    }
+
+    .list-item:hover .item-arrow {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    .footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: var(--text-primary);
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #f1f5f9;
+      color: #090a0c;
+      font-size: 12.5px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 99px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 50;
+    }
+
+    .toast.active {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 40px 18px 64px;
+      }
+      .item-desc {
+        display: none;
+      }
+      .utility-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ambient-light" aria-hidden="true"></div>
+
+  <main class="wrapper">
+    
+    <!-- Top Status & Live PKT Time -->
+    <div class="top-bar reveal" style="animation-delay: 0.05s;">
+      <div class="availability">
+        <span class="pulse-dot"></span>
+        <span>Available for select projects</span>
+      </div>
+      <div id="pkt-clock">LHE • GMT+5</div>
+    </div>
+
+    <!-- Identity Section -->
+    <header class="reveal" style="animation-delay: 0.12s;">
+      <div class="identity">
+        <div class="avatar-ring" title="Malik Sohaib Iqbal">
+          <div class="avatar-inner">
+            <img 
+              src="avatar-3d.png" 
+              alt="Malik Sohaib Iqbal 3D Avatar" 
+              class="avatar"
+              onerror="this.src='avatar.jpg'"
+            />
+          </div>
+        </div>
+        <div class="identity-text">
+          <h1>Malik Sohaib Iqbal</h1>
+          <p class="serif-role">Frontend Engineer &amp; Quality Assurance</p>
+        </div>
+      </div>
+
+      <p class="bio">
+        Building fast, resilient web interfaces and developer tools in Lahore. Focused on <strong>React</strong>, <strong>TypeScript</strong>, SEO architecture, and SQA testing engineering.
+      </p>
+    </header>
+
+    <!-- Primary Portfolio Card & Quick Utilities -->
+    <section class="bento-primary reveal" style="animation-delay: 0.2s;" aria-label="Primary Links">
+      <a href="https://maliksohaibiqbal.me" target="_blank" rel="noopener" class="flagship-card">
+        <div class="flagship-left">
+          <span class="badge-tag">01 / Primary Destination</span>
+          <span class="flagship-title">Official Portfolio &amp; Case Studies</span>
+          <span class="flagship-url">maliksohaibiqbal.me</span>
+        </div>
+        <div class="flagship-arrow" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <div class="utility-row">
+        <button type="button" class="util-btn" id="copyEmailBtn">
+          <span class="util-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span id="emailBtnText">Copy Email</span>
+          </span>
+          <span class="kbd">⌘C</span>
+        </button>
+
+        <button type="button" class="util-btn" id="shareUrlBtn">
+          <span class="util-left">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>Share Directory</span>
+          </span>
+          <span class="kbd">URL</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Section 1: Premium Ventures & Products -->
+    <section class="section-group reveal" style="animation-delay: 0.28s;" aria-labelledby="heading-ventures">
+      <div class="section-label">
+        <span id="heading-ventures">Premium Ventures &amp; Products</span>
+        <span>04</span>
+      </div>
+
+      <div class="editorial-list">
+        <a href="https://seocrawler.sohnics.tech" target="_blank" rel="noopener" class="list-item">
+          <div class="item-main">
+            <span class="item-title">Sohnics SEOCrawler</span>
+            <span class="item-desc">Advanced web SEO auditing &amp; crawler tool</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">seocrawler.sohnics.tech</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://sohnics.tech" target="_blank" rel="noopener" class="list-item">
+          <div class="item-main">
+            <span class="item-title">Sohnics Tech</span>
+            <span class="item-desc">Web engineering studio &amp; platform ecosystem</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">sohnics.tech</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://qrslate.sohnics.tech" target="_blank" rel="noopener" class="list-item">
+          <div class="item-main">
+            <span class="item-title">QRSlate</span>
+            <span class="item-desc">Instant QR code generator &amp; print studio</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">qrslate.sohnics.tech</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://tasbihhub.online" target="_blank" rel="noopener" class="list-item">
+          <div class="item-main">
+            <span class="item-title">TasbihHub</span>
+            <span class="item-desc">Digital dhikr counter &amp; prayer companion</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">tasbihhub.online</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 2: Code & Technical Writing -->
+    <section class="section-group reveal" style="animation-delay: 0.36s;" aria-labelledby="heading-code">
+      <div class="section-label">
+        <span id="heading-code">Code &amp; Technical Writing</span>
+        <span>02</span>
+      </div>
+
+      <div class="editorial-list">
+        <a href="https://github.com/MalikSohaibIqbal" target="_blank" rel="noopener me" class="list-item">
+          <div class="item-main">
+            <span class="item-title">GitHub</span>
+            <span class="item-desc">Open-source repositories &amp; SQA labs</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">@MalikSohaibIqbal</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://dev.to/malik_sohaib_iqbal" target="_blank" rel="noopener me" class="list-item">
+          <div class="item-main">
+            <span class="item-title">DEV Community</span>
+            <span class="item-desc">Articles on React, TanStack, SEO &amp; AI</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">@malik_sohaib_iqbal</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 3: Professional & Social Network -->
+    <section class="section-group reveal" style="animation-delay: 0.44s;" aria-labelledby="heading-network">
+      <div class="section-label">
+        <span id="heading-network">Elsewhere</span>
+        <span>03</span>
+      </div>
+
+      <div class="editorial-list">
+        <a href="https://www.linkedin.com/in/sohaib-iqbal-32b982192" target="_blank" rel="noopener me" class="list-item">
+          <div class="item-main">
+            <span class="item-title">LinkedIn</span>
+            <span class="item-desc">Professional background &amp; network</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">in/sohaib-iqbal</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/sohaib.iqbal.9895" target="_blank" rel="noopener me" class="list-item">
+          <div class="item-main">
+            <span class="item-title">Instagram</span>
+            <span class="item-desc">Visual updates &amp; personal moments</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">@sohaib.iqbal.9895</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <a href="mailto:sohaib.bronze92@gmail.com" class="list-item">
+          <div class="item-main">
+            <span class="item-title">Direct Email</span>
+            <span class="item-desc">Inquiries &amp; collaborations</span>
+          </div>
+          <div class="item-right">
+            <span class="item-domain">sohaib.bronze92@gmail.com</span>
+            <svg class="item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer reveal" style="animation-delay: 0.52s;">
+      <span>© <span id="year"></span> Malik Sohaib Iqbal</span>
+      <a href="https://maliksohaibiqbal.me">maliksohaibiqbal.me ↗</a>
+    </footer>
+
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard</div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Live Lahore Time (PKT)
+    function updateClock() {
+      try {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('en-US', {
+          timeZone: 'Asia/Karachi',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: true
+        });
+        document.getElementById('pkt-clock').textContent = `LHE • ${timeString}`;
+      } catch (e) {
+        document.getElementById('pkt-clock').textContent = 'LHE • GMT+5';
+      }
+    }
+    updateClock();
+    setInterval(updateClock, 30000);
+
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function triggerToast(text) {
+      toast.textContent = text;
+      toast.classList.add('active');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('active'), 2400);
+    }
+
+    const email = 'sohaib.bronze92@gmail.com';
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    const emailBtnText = document.getElementById('emailBtnText');
+
+    async function copyEmail() {
+      try {
+        await navigator.clipboard.writeText(email);
+        emailBtnText.textContent = 'Copied!';
+        triggerToast('Email copied: sohaib.bronze92@gmail.com');
+        setTimeout(() => { emailBtnText.textContent = 'Copy Email'; }, 2000);
+      } catch (err) {
+        window.location.href = `mailto:${email}`;
+      }
+    }
+
+    copyEmailBtn.addEventListener('click', copyEmail);
+
+    document.getElementById('shareUrlBtn').addEventListener('click', async () => {
+      const url = window.location.href || 'https://sohaib-iqbal.netlify.app';
+      try {
+        await navigator.clipboard.writeText(url);
+        triggerToast('Directory link copied to clipboard');
+      } catch (err) {
+        triggerToast('sohaib-iqbal.netlify.app');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'c') {
+        const selection = window.getSelection().toString();
+        if (!selection) {
+          copyEmail();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
